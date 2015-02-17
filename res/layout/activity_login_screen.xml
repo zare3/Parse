@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.parse.LoginScreen" >
+
+    
+    <ImageView
+        android:id="@+id/banner_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/paymob_banner" />
+
+    <ImageView
+        android:id="@+id/master_card_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/mastercard_logo" />
+
+    <EditText
+        android:id="@+id/password_edit_text_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_name_text_field"
+        android:layout_alignRight="@+id/user_name_text_field"
+        android:layout_below="@+id/user_name_text_field"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password_edit_text_field"
+        android:layout_alignRight="@+id/password_edit_text_field"
+        android:layout_below="@+id/password_edit_text_field"
+        android:layout_marginTop="60dp" 
+        android:background="@drawable/paymob_button"/>
+
+    <EditText
+        android:id="@+id/user_name_text_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

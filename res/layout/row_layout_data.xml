@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight" 
+    android:padding="8dp"
+    android:id="@+id/main_parent">
+   
+
+    <RelativeLayout
+        android:id="@+id/name_and_last_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="3dp"
+            android:layout_toLeftOf="@+id/transfer_amount"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textColor="#00ADEF"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/amount"
+             android:textColor="#6C6D6D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/approval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:text="TextView"
+            android:textColor="#6C6D6D"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/number"
+            android:layout_alignBottom="@+id/number"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="TextView"
+            android:textColor="#6C6D6D"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
